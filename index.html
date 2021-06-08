@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rainer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu-3');
+            menu.classList.toggle('menu-open');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="pertama">
+        <div id="header">
+            <img src="Assets/Logo.jpg" id="logo" alt="">
+            <div id="menu">
+                <img src="Assets/Mcd.png" id="nav-icon" alt="" onclick="toggleMenu();">
+                <div id="menu-text" onclick="toggleMenu();">Menu</div>
+                <div class="konten" id="menu-3">
+                    <a href="#pertama" class="kolom_3">Hallo</a>
+                    <a href="#kedua" class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Karya</a>
+                    <a href="#ketiga" class="kolom_3" onclick="return smoothScroll('ketiga')">Kontak</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="konten">
+
+
+
+            <div id="box_sd">
+                <h1> <b>Selamat Datang <br> di website Guwe</b> </h1>
+                <a href="#kedua">Lihat Karya</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="kedua">
+        <div class="konten">
+            <h2>Karya Saya</h2>
+            <div class="kolom_3">
+                <a href="setiap_folio.html">
+                    <div class="setiap_karya_gambar">
+                        <img src="Assets/foto.jpg" alt="">
+                        <p>Judul Karya</p>
+                    </div>
+                </a>
+                <p class="deskripsi"> Ini deskripsi dari setiap proyek yang ditampilkan</p>
+            </div>
+            <div class="kolom_3 kolom_3_tengah">
+                <a href="setiap_folio.html">
+                    <div class="setiap_karya_gambar">
+                        <img src="Assets/foto.jpg" alt="">
+                        <p>Judul Karya</p>
+                    </div>
+                </a>
+                <p class="deskripsi"> Ini deskripsi dari setiap proyek yang ditampilkan</p>
+            </div>
+            <div class="kolom_3">
+                <a href="setiap_folio.html">
+                    <div class="setiap_karya_gambar">
+                        <img src="Assets/foto.jpg" alt="">
+                        <p>Judul Karya</p>
+                    </div>
+                </a>
+                <p class="deskripsi"> Ini deskripsi dari setiap proyek yang ditampilkan</p>
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="ketiga">
+        <div class="konten">
+            <h2>Kontak Saya</h2>
+
+            <div class="kolom_2">
+                <form action="" novalidate onsubmit="return validasi (this)">
+                    <input type="text" placeholder="Nama">
+                    <input type="email" placeholder="Email">
+                    <textarea name="pesan" placeholder="pesan " cols="40" rows="8"></textarea>
+                    <input type="submit" name="submit" value="kirim">
+                </form>
+            </div>
+
+            <div class="kolom_2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8884419766646!2d106.84094271527009!3d-6.145683061956877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f59299a91503%3A0x9973236ee027ddb9!2sJl.%20Rajawali%20Selatan%20Raya%20No.29%2C%20RT.2%2FRW.10%2C%20Gn.%20Sahari%20Utara%2C%20Kecamatan%20Sawah%20Besar%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010720!5e0!3m2!1sen!2sid!4v1618028601360!5m2!1sen!2sid"
+                    width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+            <div class="clear"> </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <p>&copy; WEH INI RAINER PUNYA - 2021 </p>
+    </div>
+
+    <script src="folio.js"></script>
+</body>
+
+</html>
